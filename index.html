@@ -3,18 +3,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
    <title>Historia Precolombina Argentina</title>
+   <meta name="description" content="Historia y cultura precolombina argentina, sus pueblos originarios">
+   <meta name="keywords" content="indígenas, pueblos, originarios, derechos, aborígenes">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="./css-sass/main.css">
+   <link rel="stylesheet" type="text/css" href="/css-sass/style.css">
 </head>
 
 <body>
    <header>
-      <h1>tratando de hacer que ande</h1>
       <nav class="navbar navbar-expand-lg navbar-light bg-sandybrown">
          <div class="container-fluid">
            <a class="navbar-brand" href="/index.html"><img src="./imagenes/Logo.jpg"></a>
@@ -127,24 +128,27 @@
          </div>
    </article>   
 
+   <div class="contenedor-prueba">
+      <p>SOY UN TEXTO</p>
+   </div>
 
    <section>
-      <h3>Dejanos tus comentarios!</h3>
-      <form>
-         <label for="nombre">Ingresá tu nombre: </label>
-         <input type="text" placeholder="Nombre y Apellido" id="nombre">
+      <form class="form">
+         <h3 class="form__titu">Dejanos tus comentarios!</h3>
+            <label for="nombre">Ingresá tu nombre: </label>
+            <input type="text" placeholder="Nombre y Apellido" id="nombre">
          <br><br>
-         <label for="email">Ingresá tu email:  </label>
-         <input type="email" placeholder="email"  id="email">
+            <label for="email">Ingresá tu email:  </label>
+            <input type="email" placeholder="email"  id="email">
          <br><br>
-         <label for="multi">Comentarios: </label>
-         <textarea name="multi" id="multi" cols="20" rows="5"></textarea>
+         <label for="multi" class="form__esp">Comentarios: </label>
+         <textarea name="multi" id="multi" cols="80" rows="2"></textarea>
       </form>
-      <br>
-   </section>
+   </section> 
+   
 
    <footer>
-      <div class="container-fluid">
+      <div class="container-fluid $redscial">
          <div class="row footcol">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding-right">
                <h4>Contacto</h4>
@@ -157,11 +161,12 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-right">
                <h4>Campañas</h4>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding-right">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding-right cont-iconos">
                <h4>Seguinos</h4>
-               <p><i class="bi bi-facebook"></i> Facebook</p>
-               <p><i class="bi bi-instagram"></i> Instagram</p>
-               <p><i class="bi bi-twitter"></i> Twitter</p>
+               <p id="FB"><i class="bi bi-facebook"></i> Facebook</p>
+               <p id="Ig"><i class="bi bi-instagram"></i> Instagram</p>
+               <p id="Twt"><i class="bi bi-twitter"></i> Twitter</p>
+               <p id="Whapp"><i class="bi bi-whatsapp"></i> Whatsapp</p>
             </div>
          </div>
       </div>
