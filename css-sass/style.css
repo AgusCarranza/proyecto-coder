@@ -2,6 +2,10 @@
   margin-left: 15px;
 }
 
+h4 {
+  text-align: center;
+}
+
 .contenedor-colores, .contenedor-prueba {
   height: 100px;
   width: 200px;
@@ -123,13 +127,15 @@ header {
 }
 
 #grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 100px);
-    gap: 10px;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (100px)[6];
+      grid-template-rows: repeat(6, 100px);
+  gap: 10px;
+}
 
-  
 .grid-item {
   background-color: antiquewhite;
 }
@@ -274,9 +280,21 @@ header {
   margin-left: auto;
 }
 
+.coment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .form {
   margin-left: 30px !important;
   padding-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form__esp {
@@ -309,6 +327,10 @@ header {
   background: tan;
   border: 2px, solid, black;
   text-align: center;
+}
+
+.animate__bounce:hover {
+  -webkit-animation: bounce 2.5s infinite;
 }
 
 /*fin sur*/

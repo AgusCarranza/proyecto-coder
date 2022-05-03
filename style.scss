@@ -4,6 +4,11 @@
     }
 }
 
+h4 {
+  text-align: center;
+}
+
+
 $color-wapp:green;
 $color-fb:blue;
 $color-insta:rgb(212, 19, 90);
@@ -262,11 +267,17 @@ body {
    margin-right: auto;
    margin-left: auto;
   }
+
+  .coment {
+    display: flex;
+    justify-content: center;
+  }
  
  
   .form {
       margin-left: 30px!important;
       padding-bottom: 30px;
+      justify-content: center;
       &__esp {
         background-color: aqua;
         text-align: center;
