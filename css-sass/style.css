@@ -34,7 +34,7 @@ h2 {
 }
 
 body {
-  background-color: sienna;
+  background-color: #c6712c;
 }
 
 .imagen {
@@ -245,7 +245,7 @@ header {
 }
 
 .caps a {
-  color: chocolate;
+  color: blue;
 }
 
 .caps h3 {
@@ -287,24 +287,46 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: burlywood;
+  margin: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.form {
-  margin-left: 30px !important;
-  padding-bottom: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form__esp {
-  background-color: aqua;
-  text-align: center;
-}
-
-.form__titu {
+.coment__titu {
   margin-bottom: 30px;
-  margin-left: 30px;
+}
+
+.coment__caja {
+  background-color: sienna;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.coment__nomb {
+  width: 610px;
+}
+
+@media (max-width: 400px) {
+  .coment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: burlywood;
+    margin: 10px;
+  }
+  .coment__titu {
+    margin-bottom: 10px;
+  }
+  .coment__caja {
+    background-color: sienna;
+  }
+  .coment__nomb {
+    width: 70px;
+  }
 }
 
 /*principio sur*/

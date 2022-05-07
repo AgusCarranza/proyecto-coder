@@ -60,7 +60,7 @@ h2 {
 }
 
 body {
-    background-color: sienna;
+    background-color: rgb(198, 113, 44);
   }
   
   .imagen {
@@ -238,7 +238,7 @@ body {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
    }
      a{
-       color: chocolate
+       color: blue
      }
        h3 {
          color: brown;
@@ -271,23 +271,40 @@ body {
   .coment {
     display: flex;
     justify-content: center;
-  }
- 
- 
-  .form {
-      margin-left: 30px!important;
-      padding-bottom: 30px;
-      justify-content: center;
-      &__esp {
-        background-color: aqua;
-        text-align: center;
-      }
-      &__titu {
-       margin-bottom: 30px;
-       margin-left: 30px;
-     }
-  }
- 
+    background-color: burlywood;
+    margin: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__titu {
+      margin-bottom: 30px;
+    }
+    &__caja {
+      background-color: sienna;
+      padding-left: 260px;
+      padding-right: 260px;
+    }
+    &__nomb {
+      width: 610px;
+    }
+    }
+    
+    @media(max-width: 400px) {
+      .coment {
+        display: flex;
+        justify-content: center;
+        background-color: burlywood;
+        margin: 10px;
+        &__titu {
+          margin-bottom: 10px;
+        }
+        &__caja {
+          background-color: sienna;
+        }
+        &__nomb {
+          width: 70px;
+        }
+        }
+    }
   
   /*principio sur*/
   
