@@ -42,7 +42,7 @@ body {
 }
 
 .intro__tit {
-  background-color: chocolate;
+  background-color: rgba(157, 75, 16, 0.655);
   text-align: center;
   padding: 20px;
 }
@@ -67,12 +67,16 @@ body {
   margin: 0px 15px;
 }
 
+.navbar-brand {
+  padding: 10px;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: sienna;
+  background-color: #864121;
 }
 
 .deco a {
@@ -96,8 +100,8 @@ header {
 }
 
 .zoom:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .main__section-img {
@@ -236,20 +240,13 @@ header {
   color: wheat;
 }
 
-.caps__text2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.caps__text3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .caps a {
   color: blue;
 }
 
 .caps h3 {
   color: brown;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -268,8 +265,28 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  padding: 0px;
+  padding: 40px;
   margin: 0px;
+}
+
+.deco-ico1 a {
+  text-decoration: none !important;
+  color: blue;
+}
+
+.deco-ico2 a {
+  text-decoration: none !important;
+  color: #d4135a;
+}
+
+.deco-ico3 a {
+  text-decoration: none !important;
+  color: #11789b;
+}
+
+.deco-ico4 a {
+  text-decoration: none !important;
+  color: green;
 }
 
 .container-fluid {
@@ -298,13 +315,27 @@ header {
 }
 
 .coment__caja {
-  background-color: sienna;
+  background-color: #864121;
   padding-left: 260px;
   padding-right: 260px;
 }
 
 .coment__nomb {
   width: 610px;
+}
+
+.boton {
+  background-color: #864121;
+  border: none;
+  color: black;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 400px) {

@@ -69,7 +69,7 @@ body {
  
   .intro {
    &__tit {
-     background-color: chocolate;
+     background-color: rgba(157, 75, 16, 0.655);
      text-align: center;
      padding: 20px;
    }
@@ -91,12 +91,16 @@ body {
      font-size: 1.3rem;
      margin: 0px 15px;
   }
+
+  .navbar-brand {
+    padding: 10px;  
+  }
  
   header {
       position: sticky;
       top: 0;
       z-index: 100;
-      background-color: sienna;
+      background-color: rgb(134, 65, 33);
   }
   
   .deco a {
@@ -117,9 +121,9 @@ body {
  
   
   .zoom:hover {
-    -ms-transform: scale(1.3); 
-    -webkit-transform: scale(1.3); 
-    transform: scale(1.3); 
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
   }
  
  
@@ -231,17 +235,18 @@ body {
     }
  
     &__text2 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
     }
  
     &__text3 {
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
    }
      a{
        color: blue
      }
        h3 {
          color: brown;
+         text-align: center;
      }
   }
   
@@ -256,8 +261,28 @@ body {
       background-color: black;
       color: white;
       width: 100%;
-      padding: 0px;
+      padding: 40px;
       margin: 0px;
+  }
+
+  .deco-ico1 a {
+    text-decoration: none!important;
+    color: blue;
+  }
+
+  .deco-ico2 a {
+    text-decoration: none!important;
+    color: rgb(212, 19, 90);
+  }
+
+  .deco-ico3 a {
+    text-decoration: none!important;
+    color: rgb(17, 120, 155);
+  }
+
+  .deco-ico4 a {
+    text-decoration: none!important;
+    color: green;
   }
  
   .container-fluid {
@@ -279,7 +304,7 @@ body {
       margin-bottom: 30px;
     }
     &__caja {
-      background-color: sienna;
+      background-color: rgb(134, 65, 33);
       padding-left: 260px;
       padding-right: 260px;
     }
@@ -287,6 +312,20 @@ body {
       width: 610px;
     }
     }
+
+    .boton {
+      background-color: rgb(134, 65, 33);
+      border: none;
+      color: black;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      box-shadow: none;
+  }
+
     
     @media(max-width: 400px) {
       .coment {
