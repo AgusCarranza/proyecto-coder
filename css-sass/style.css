@@ -4,6 +4,11 @@
 
 h4 {
   text-align: center;
+  padding: 10px;
+}
+
+.navbar-brand img {
+  border-radius: 50% !important;
 }
 
 .contenedor-colores, .contenedor-prueba {
@@ -28,13 +33,18 @@ h4 {
   color: green;
 }
 
+.pintro {
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   color: var(--color);
+  padding: 40px;
 }
 
 body {
-  background-color: #c6712c;
+  background-color: #c78956;
 }
 
 .imagen {
@@ -49,6 +59,10 @@ body {
 
 .intro a {
   color: chocolate;
+}
+
+.img-radio {
+  border-radius: 50%;
 }
 
 .princtit {
@@ -80,9 +94,15 @@ header {
 }
 
 .deco a {
-  text-decoration: none;
   color: black;
   font-size: 16px;
+  margin: 60px;
+}
+
+@media (max-width: 599px) {
+  .deco a {
+    margin: 0px;
+  }
 }
 
 .banner1 {
@@ -109,6 +129,15 @@ header {
   width: 450px;
 }
 
+.artic__listado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .artic__options {
   list-style: none;
   text-decoration: none !important;
@@ -116,9 +145,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .artic .artic__title ul li {
@@ -247,6 +276,24 @@ header {
 .caps h3 {
   color: brown;
   text-align: center;
+  margin: 60px;
+}
+
+.sabes {
+  text-align: center;
+  padding: 20px;
+}
+
+.se-pa {
+  padding-left: 15px;
+}
+
+.seamosparte1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -316,29 +363,49 @@ header {
 
 .coment__caja {
   background-color: #864121;
-  padding-left: 260px;
-  padding-right: 260px;
+  width: 100%;
+  text-align: center;
 }
 
 .coment__nomb {
   width: 610px;
 }
 
+/*@media (max-width: 360px){ 
+      .coment {
+        display: flex;
+        justify-content: left;
+        padding-right: auto;
+        margin: 50px;
+        width: 100%;
+      }
+      }*/
 .boton {
-  background-color: #864121;
-  border: none;
-  color: black;
+  background-color: white;
+  border: 4px solid #864121;
+  color: #864121;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
-@media (max-width: 400px) {
+.boton:hover {
+  color: #864121;
+}
+
+.botonote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 599px) {
   .coment {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -348,6 +415,7 @@ header {
             justify-content: center;
     background-color: burlywood;
     margin: 10px;
+    padding: 10px;
   }
   .coment__titu {
     margin-bottom: 10px;
@@ -360,12 +428,19 @@ header {
   }
 }
 
+.com-box {
+  width: 100%;
+}
+
+.coment__nomb {
+  width: 100%;
+}
+
 /*principio sur*/
 .flex-container1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: chocolate;
   padding: 10px;
   height: auto;
   -webkit-box-pack: center;
@@ -380,10 +455,6 @@ header {
   background: tan;
   border: 2px, solid, black;
   text-align: center;
-}
-
-.animate__bounce:hover {
-  -webkit-animation: bounce 2.5s infinite;
 }
 
 /*fin sur*/
