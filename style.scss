@@ -59,6 +59,7 @@ $colores: (
 
 .pintro {
   text-align: center;
+  padding: 5px;
 }
  
 h2 {
@@ -70,6 +71,7 @@ h2 {
 body {
     background-color: rgb(199, 137, 86);
   }
+
   
   .imagen {
     padding-left: 180px;
@@ -86,6 +88,9 @@ body {
    }
   }
  
+  .investi {
+    margin-left: 15px;
+  }
 
   .img-radio {
     border-radius: 50%;
@@ -99,7 +104,7 @@ body {
   }
  
   .navbar-light .navbar-nav .nav-link {
-     color: black;
+     color: antiquewhite;
      font-size: 1.3rem;
      margin: 0px 15px;
   }
@@ -114,6 +119,7 @@ body {
       z-index: 100;
       background-color: rgb(134, 65, 33);
   }
+
   
   .deco a {
     color: black;
@@ -126,8 +132,43 @@ body {
       margin: 0px;
     }
   }
+
+  .banner {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(imagenes/bakcgroundbanner.png);
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .texto-banner {
+    font-size: 4vw;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .texto-banner {
+    font-size: 5vw;
+  }
+}
   
-  .banner1 {
+
+@media screen and (max-width: 386px) {
+  .texto-banner {
+  font-size: 6vw;
+  text-align: center;
+}
+}
+
+
+
+
+ .banner1 {
     margin: 0 auto;
     justify-content: center;
   }
@@ -149,6 +190,212 @@ body {
     margin-left: 200px;
     width: 450px;
   }
+
+  /* Galería*/
+
+  *, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+/* imagenes del grid*/
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url(imagenes/niña.jpg);
+  background-size: cover;
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url(imagenes/dibujos-mapuches.jpeg);
+  background-size: contain;
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url(imagenes/paisaje.jpg);
+  background-size: cover;
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url(imagenes/norte.jpg);
+  background-size: cover;
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url(imagenes/mate.jpg);
+  background-size: cover;
+}
+.img-6 {
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url(imagenes/niño.jpg);
+  background-size: cover;
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url(imagenes/lago.jpg);
+  background-size: cover;
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url(imagenes/rocas.jpg);
+  background-size: cover;
+}
+
+/* Size of the container */
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+
+/* Grid of the gallery on desktop */
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas: 'img-1 img-2 img-3 img-3'
+                      'img-1 img-4 img-5 img-6'
+                      'img-7 img-7 img-8 img-6';
+}
+
+
+.image-gallery a {
+  width: 100%;
+  height:25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Icon styles - you only can see icons when you hover on images */
+
+
+.image-gallery a ion-icon {
+  /* color: rgba(255, 255, 255, .6); */
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, .6);
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+
+/* Another hover action ---- > background color */
+
+.image-gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+
+/* Make the icon and the background visible when hovering */
+
+.image-gallery a:hover ion-icon, .image-gallery a:hover::before  {
+  opacity: 1;
+}
+
+/* Media querys tablet --> medium size screens */
+
+@media screen and (max-width:900px) {
+
+    
+  .image-gallery {
+      grid-template-areas: 'img-1 img-1 img-2 img-2'
+                          'img-1 img-1 img-3 img-3'
+                          'img-4 img-4 img-5 img-5'
+                          'img-6 img-7 img-7 img-7'
+                          'img-8 img-8 img-8 img-8';
+      }
+  
+      .image-gallery a {
+          height: 20rem;
+      }
+  
+      .img-1 {
+          min-height: 41.5rem;
+      }
+  
+      .img-6 {
+          min-height: 20rem;
+      }
+  
+  }
+  
+  /* Media querys mobile ---> small size screens */
+  
+  @media screen and (max-width:600px) {
+  
+      
+      .image-gallery {
+          grid-template-areas: 'img-1 img-1 img-1 img-1'
+                              'img-2 img-2 img-2 img-2'
+                              'img-3 img-3 img-3 img-3'
+                              'img-4 img-4 img-4 img-4'
+                              'img-5 img-5 img-5 img-5'
+                              'img-6 img-6 img-6 img-6'
+                              'img-7 img-7 img-7 img-7'
+                              'img-8 img-8 img-8 img-8';
+          }
+      
+          .image-gallery a, .img-1, .img-6{
+              height: 30rem;
+              min-height: 30rem;
+          }
+      
+          
+      
+      }
+
+
+      .image-gallery a .caja {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(143, 96, 25);
+        position: absolute;
+        bottom:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 16px;
+        margin: 0% 10%;
+    }
+
+
+
+
+
+
+
+
+
+
+
  
  .artic {
   &__listado {
@@ -168,71 +415,75 @@ body {
  &__first {
      margin-left: 30px;
    }
- }
+  }
+
  
-  #grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 100px);
-    gap: 10px;
-  }
+//   #grid-container {
+//     display: grid;
+//     /*grid-template-columns: repeat(6, 1fr);*/
+//     grid-template-rows: repeat(6, 100px);
+//     gap: 10px;
+//   }
   
-  .grid-item {
-    background-color: antiquewhite;
-  }
+//   .grid-item {
+//     background-color: antiquewhite;
+//   }
   
-  .grid-item:nth-child(1) {
-    background-color: burlywood;
-    grid-column: 3/1;
-    grid-row: 3/7;
-  }
+//   .grid-item:nth-child(1) {
+//     background-color: burlywood;
+//     grid-column: 3/1;
+//     grid-row: 3/7;
+//   }
   
-  .grid-item:nth-child(2) {
-    background-color: burlywood;
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
+//   .grid-item:nth-child(2) {
+//     background-color: burlywood;
+//     grid-column: 1/3;
+//     grid-row: 1/3;
+//   }
   
-  .grid-item:nth-child(3) {
+//   .grid-item:nth-child(3) {
     
-    grid-column: 3/5;
-    grid-row: 1/5;
-  }
+//     grid-column: 3/5;
+//     grid-row: 1/5;
+//   }
   
-  .grid-item:nth-child(4) {
-    background-color: burlywood;
-    grid-column: 7/5;
-    grid-row: 7/1;
-  }
+//   .grid-item:nth-child(4) {
+//     background-color: burlywood;
+//     grid-column: 7/5;
+//     grid-row: 7/1;
+//   }
   
-  .grid-item:nth-child(5) {
-    background-color: antiquewhite;
-    grid-column: 3/5;
-    grid-row: 7/5;
-  }
+//   .grid-item:nth-child(5) {
+//     background-color: antiquewhite;
+//     grid-column: 3/5;
+//     grid-row: 7/5;
+//   }
+
   
   .pad {
-    padding: 10px 20px;
+    // padding: 10px 20px;
     text-align: center;
   }
   
-  .pad1 {
-    padding: 15px 55px;
-  }
+  // .pad1 {
+  //   padding: 15px 55px;
+  // }
   
-  .pad2 {
-    padding: 5px 50px;
-  }
+  // .pad2 {
+  //   padding: 5px 50px;
+  // }
   
   .pad3 {
-    padding: 15px 30px;
+    // padding: 15px 30px;
     text-align: center;
   }
   
   .pad4 {
-    padding: 5px 15px;
+    // padding: 5px 15px;
     text-align: center;
   }
+
+ 
   
   
   .iframe {
@@ -256,13 +507,18 @@ body {
       color: wheat;
     }
  
-  //   &__text2 {
-      
-  //   }
+     &__text2 {
+      color: wheat;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: -10px;
+     }
  
-  //   &__text3 {
-    
-  //  }
+    &__text3 {
+      color: wheat;
+      padding-left: 15px;
+      padding-right: 15px;
+     }
      a{
        color: blue
      }
@@ -273,6 +529,10 @@ body {
      }
   }
 
+  .talleres {
+    text-align: center;
+  }
+
   .sabes {
     text-align: center;
     padding: 20px;
@@ -280,6 +540,12 @@ body {
 
   .se-pa {
     padding-left: 15px;
+    text-align: center;
+  }
+
+  .juaz {
+    text-align: center;
+    margin: auto;
   }
 
   .seamosparte1 {
@@ -287,6 +553,40 @@ body {
     width: 100%;
     margin-top: 20px;
   }
+
+  .seamosparte1 img {
+    margin-left: -15px; 
+    width: 144px;
+  }
+
+  @media (max-width:600px) {
+    .seamosparte1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+      .imagSeamos {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-bottom: 10px;
+          width: 100%;
+
+        }
+      }
+        
+    }
+  }
+
+
+  .grid-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
   
   @media (max-width:600px) {
     #grid-container {
@@ -424,5 +724,6 @@ body {
     border: 2px, solid, black;
     text-align: center;
   }
+
   
   /*fin sur*/

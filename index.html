@@ -13,7 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="css-sass/style.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                     <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="region-central.html">Región central</a>
@@ -50,9 +50,13 @@
 
    <section>
 
+      <div class="banner">
+         <h1 class="texto-banner">Historia Precolombina Argentina</h1>
+      </div>
+
+
       <div class="intro">
-         <h2 class="intro__tit">Historia Precolombina Argentina</h2>
-         <h4>Un sitio para des-invsisibilizar parte de la cultura argentina</h4>
+         <h2 class="intro__tit">Un sitio para des-invsisibilizar parte de la cultura argentina</h2>
          <p class="pintro">Este espacio es pensado para mostrar, compartir e informar sobre una parte de la cultura que por distintas causas –acontecimientos azarosos, ser una minoría o la deliberada intención de esconder- quedó ivisibilizada, estigmatizada, denigrada.</p>
          <p class="pintro">El objetivo de este sitio es para personas interesadas en aprender e interiorizarse en las culturas autóctonas de la Repúblca Argentina.</p>
 
@@ -91,7 +95,61 @@
             <li><a href="#C4">Seamos parte</a></li>
          </ul>
       </div>
-      <div id="grid-container">
+
+      
+      <!-- <div class="grid-cont">
+         <div class="cont-img">
+            <img src="./imagenes/araucanos1.jpg" alt="Familia Araucana">
+            <p>Familia Arauncana</p>
+         </div>
+         <div class="cont-img">
+            <img src="./imagenes/pueblos-originarios2.jpeg">
+         </div>
+         <div class="cont-img">
+            <img src="./imagenes/referencia.png">
+         </div>
+         <div class="cont-img">
+            ss
+            <p>Mapa según pueblos</p>
+         </div>
+         <div class="cont-img">
+            <img src="./imagenes/dibujos-mapuches.jpeg" alt="Dibujos Mapuches">
+            <p>Dibujos Mapuches</p>
+         </div>
+      </div> -->
+
+      <div class="container">
+         <div class="image-gallery">
+             <a href="imagenes/niña.jpg" class="img-1"> 
+               <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/dibujos-mapuches.jpeg" class="img-2">
+               <div class="caja"><p>Dibujo Mapuche</p></div> 
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/paisaje.jpg" class="img-3">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/norte.jpg" class="img-4">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/mate.jpg" class="img-5">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/niño.jpg" class="img-6">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/lago.jpg" class="img-7">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+             <a href="imagenes/rocas.jpg" class="img-8">
+                 <ion-icon name="expand-outline"></ion-icon>
+             </a>
+         </div>
+     </div>
+
+
+      <!-- <div id="grid-container">
          <div class="grid-item pad">
             <img src="./imagenes/araucanos1.jpg" alt="Familia Araucana">
             <p>Familia Arauncana</p>
@@ -110,7 +168,7 @@
             <img src="./imagenes/dibujos-mapuches.jpeg" alt="Dibujos Mapuches">
             <p>Dibujos Mapuches</p>
          </div>
-      </div>
+      </div> -->
 
       
       <div class="caps">
@@ -133,35 +191,46 @@
                </div>
             </div>
          </div>
+
+         <div class="container">
+            <div class="row">
+               <h5 class="sabes">25 de mayo: conmemoración de la muerte de la teniente coronel Juana Azurduy</h5>
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-right">
+                  <p class="caps__text">Mestisa y hérfana a los 14 años, de ideas republicanas, a favor de la lucha por la libertad y la confraternidad, desde jóven comenzó a luchar por la liberación de hispanoamérica, campos de batalla donde desarrolló una impecable técnica de combate con el sable, que la hizo destacar en las múltiples batallas en las que luchó. En 1810 se incorporó al Ejército Auxiliar del Norte, cuerpo</p>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-right juaz">
+                  <img alt="Juana Azurduy" src="./imagenes/azurduy.jpeg" data-themekey="#" style="margin: 5px; padding: 5px;"/>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-right">
+                  <p class="caps__text"> militar argentino bajo el mando de Manuel Belgrano, con el objetivo de liberar el Alto Perú. Azurduy, junto a su mardio, Manuel Padilla, lograron reclutar una milicia de diez mil soldados, con quienes libraron distintas cruzadas que contribuyeron a la independencia de Perú y Bolivia. En 1816 su marido fue capturado, por lo que Juana, al mando de doscientos jinetes, entre los que había mujeres</p>
+               </div>
+            </div>
+         </div>
+         <p class="caps__text2">indias, mestizas y criollas, fue a rescatarlo de las tropas españolas. Por su valentía, el mismo Belgrano le regaló un sable en honor a su compromiso con la independencia y en el mismo acto fue investida teniente coronel.</p>
+         <p class="caps__text3">A pesar de que Bolivia se independizó en 1825, Juana no pudo recuperar sus bienes confiscados al principio de la guerra. Luego de que su marido muriera mientras la intentaba rescatar cuando estaba herida y apresada en la Batalla de la Laguna, Juana Azurduy pasó sus últimos años de vida en Jujuy, viviendo en la miseria.</p>
          
-         <p class="caps__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-         <p class="caps__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in dolore magna aliqua reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
+         
          <h3 id="C2">Talleres creativos</h3>
-         <p class="caps__text2">Lmusica danza escritura</p>
-         <p class="caps__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
+         <h5 class="talleres">Musica</h5>
+            <p>La música trianl es muy linda</p>
+         <h5 class="talleres">Danza</h5>
+         <p></p>
+         <h5 class="talleres">Escritura</h5>
 
          <h3 id="C3">Investigación</h3>
-         <p><img alt="Puntas de flechas" src="./imagenes/puntas-flechas.jpg" data-themekey="#" style="width: 182px; margin: 5px; padding-right: 5px; float: left;"/>EY is committed to building a better working world – one that creates sustainable and inclusive economic growth. We recognize that our responsibility to minimize the environmental impact of EY business operations extends to EY people and clients and to the wider communities in which we all live.</p>
-         <p class="caps__text3">idioma: Al menos el 40% de las 7.000 lenguas utilizadas en todo el mundo están en peligro de desaparecer. Se trata de lenguas especialmente vulnerables porque muchas de ellas no se enseñan en la escuela ni se utilizan en la esfera pública.</p>
-         <p><img alt="Pipas y vasijas de barro" src="./imagenes/pipas-vasijas-barro.jpg" data-themekey="#" style="width: 182px; margin: 5px; pagging-left:5px; float: right;"/> arte, cultura- EY is committed to building a better working world – one that creates sustainable and inclusive economic growth. We recognize that our responsibility to minimize the environmental impact of EY business operations extends to EY people and clients and to the wider communities in which we all live.</p>
-         <p class="caps__text3">Arquología</p>
+         <h5><img alt="Puntas de flechas" src="./imagenes/puntas-flechas.jpg" data-themekey="#" style="width: 182px; margin: 5px; padding-right: 5px; float: left;"/>Arqueología</h5>
+         <p>Mediante el estudio de restos materiales encontrados en stios y mediante excavaciones donde habitaron nativos se ha podido recaudar inmensa y valiosísima información de sus costumbres, modos de vida, cultura, forma de relacionarse y organización y arte, entre muchas otras cosas. La investigación en este campo sigue aportndo datos de enorme envergadura y todavía hay muchísimo que aprender.</p>
+         <h5 class="investi">Lenguas</h5>
+         <p>Al menos el 40% de las 7.000 lenguas utilizadas en todo el mundo están en peligro de desaparecer. Se trata de lenguas especialmente vulnerables porque muchas de ellas no se enseñan en la escuela ni se utilizan en la esfera pública. Y muchas de ellas perteneces a pueblos indígenas</p>
+         <p>Es enorme el trabajo y la dedicción que se está haciendo y que aún se requiere para que esta valiosísima parte del legado cultural de la humanidad no se pierda y nos sirva para seguir enriqueciéndonos.</p>
+         <h5 class="investi"><img alt="Pipas y vasijas de barro" src="./imagenes/pipas-vasijas-barro.jpg" data-themekey="#" style="width: 182px; margin: 5px; padding-left:5px; float: right;"/> Arte y Cultura</h5>
+            <p>El arte indígena -artes plásticas, música, literatura y danza- completamente exento de pretensiones de originalidad y respetando enromemente las tradiciones de cada pueblo, es una enorme fuente de conocimiento que de una forma lúdica permite acceder a su cultura</p>
+         <p>El arte indígena recurre a la belleza para representar aspectos de la realidad y poder así movilizar el sentido, intensificar la experiencia del mundo, procesar en conjunto la memoria y proyectar en forma de imagen el porvenir comunitario.</p>
          <h3 id="C4">Seamos parte</h3>
 
          <div class="container seamosparte1">
-            <div>
-               <img style="margin-left: -15px;" width="144" height="96" src="./imagenes/dia-internac-indig.jpg"
+            <div class="imagSeamos">
+               <img src="./imagenes/dia-internac-indig.jpg"
                   alt="Día internacional del pueblo indígena">
             </div>
             <div>
@@ -171,8 +240,8 @@
          </div>
 
          <div class="container seamosparte1" style="display: flex; width: 100%;">
-            <div>
-               <img style="margin-left: -15px;" width="144" height="96" src="./imagenes/comemor.jpeg"
+            <div class="imagSeamos">
+               <img src="./imagenes/comemor.jpeg"
                   alt="Conmemoración virtual 2022">
             </div>
             <div>
@@ -191,21 +260,21 @@
          </div>
 
          <div class="container seamosparte1">
-            <div>
-               <img style="margin-left: -15px;" width="144" height="96" src="./imagenes/comedores-comunitarios.jpeg"
+            <div class="imagSeamos">
+               <img src="./imagenes/comedores-comunitarios.jpeg"
                   alt="Comedores comunitarios">
             </div>
             <div>
                <h5 class="se-pa">Comedores comunitarios</h5>
-               <p class="caps__text4">Eestamos en contacto con 124 comedores de las distintas provincias el país, donde se alimentan a alrededor de 1845 familias por día.</p>
+               <p class="caps__text4">Estamos en contacto con 124 comedores de las distintas provincias el país, donde se alimentan a alrededor de 1845 familias por día.</p>
                <p>Estamos comprometides con el medio ambiente, por eso todos los alimentos que se utilizan en la preparación de las comidas que se ofrecen provienen de centros orgánicos y una proción de los insumos son producidos en los mismos comedores.</p>
                <p>Vení a alimentarte o a ayudarnos a alimentar</p>
             </div>
          </div>
 
          <div class="container seamosparte1">
-            <div>
-               <img style="margin-left: -15px;" width="144" height="96" src="./imagenes/inserc-lab.jpeg"
+            <div class="imagSeamos">
+               <img src="./imagenes/inserc-lab.jpeg"
                   alt="Inserción Laboral">
             </div>
             <div>
@@ -217,8 +286,8 @@
          </div>
 
          <div class="container seamosparte1">
-            <div>
-               <img style="margin-left: -15px;" width="144" height="96" src="./imagenes/construcc-viviendas.jpeg"
+            <div class="imagSeamos">
+               <img src="./imagenes/construcc-viviendas.jpeg"
                   alt="Construcción de vivienda">
             </div>
             <div>
